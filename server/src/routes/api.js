@@ -3,9 +3,9 @@ const router = express.Router();
 
 const {
   getUsers,
-  createAnimal,
-  deleteAnimal,
-  updateAnimal,
+  createUser,
+  deleteUser,
+  updateUser,
 } = require('../controllers/Users');
 
 // Defined Api Routes
