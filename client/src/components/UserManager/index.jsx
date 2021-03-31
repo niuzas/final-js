@@ -96,13 +96,13 @@ export class UserManager extends Component {
       },
       (error) => console.error(error)
     );
-    console.log('AM mounted');
+    console.log('UM mounted');
   }
 
   render() {
     const { users, editedUserId, editedUser } = this.state;
     const isUpdating = Boolean(editedUserId);
-    console.log('AM rendered, data:', users);
+    console.log('UM rendered, data:', users);
 
     return (
       <div className={styles.UserManagerGrid}>
