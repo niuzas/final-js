@@ -4,6 +4,7 @@ import api from '../../api';
 import FormCreateUser from '../FormCreateUser';
 import Table from '../Table';
 import styles from './styles.module.css';
+import LANG from '../../translations/LANG';
 
 export class UserManager extends Component {
   constructor(props) {
@@ -32,7 +33,7 @@ export class UserManager extends Component {
   };
 
   saveUser = () => {
-    console.log("AM saving user state:",this.state)
+    console.log('AM saving user state:', this.state);
     api.updateUser(
       this.state.editedUserId,
       this.state.editedUser,
@@ -112,7 +113,7 @@ export class UserManager extends Component {
           handleInputChange={this.updateEditedUser}
           inputData={editedUser}
         />
-        <Table title="Esami Vartotojai" data={users} deleteEntity={this.deleteUser} updateEntity={this.editUser} />
+        <Table title={LANG.currentusers} data={users} deleteEntity={this.deleteUser} updateEntity={this.editUser} />
       </div>
     );
   }

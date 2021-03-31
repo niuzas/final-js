@@ -13,7 +13,7 @@ class FormCreateUser extends React.Component {
   }
 
   render() {
-    const actionTitle = (this.props.isUpdating ? 'Naujinti' : 'Sukurti') + ' Vartotoją';
+    const actionTitle = (this.props.isUpdating ? LANG.createuser : LANG.updateuser);
     return (
       <form className={styles.FormCreate} onSubmit={this.handleFormSubmit}>
         <h2>{actionTitle}</h2>

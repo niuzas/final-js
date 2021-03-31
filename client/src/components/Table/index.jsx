@@ -65,7 +65,7 @@ class Table extends React.Component {
 
     return (
       <div>
-        <h2>{this.props.title} {!dataExists ? '- no data' : null}</h2>
+        <h2>{this.props.title} {!dataExists ? LANG.nodata : null}</h2>
         {
           dataExists ?
             <table className={styles.Table}>
