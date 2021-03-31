@@ -10,9 +10,9 @@ const getUsers = async (req, res) => {
     Users = Users.map((user) => ({
       id: user._id,
       name: user.name,
-      breed: user.breed,
-      weight: user.weight,
-      birthDate: user.birthDate,
+      age: user.age,
+      email: user.email,
+      password: user.password,
     }));
     res.status(200).json(Users);
   } catch (error) {
@@ -22,14 +22,14 @@ const getUsers = async (req, res) => {
 
 const createUser = async (req, res) => {
   try {
-    const { name, breed, weight, birthDate } = req.body;
-    const user = new User({ name, breed, weight, birthDate });
+    const { name, age, email, password } = req.body;
+    const user = new User({ name, age, email, password });
     await user.save();
     res.status(201).json({
       id: user._id,
       name: user.name,
-      weight: user.weight,
-      birthDate: user.birthDate,
+      age: user.age,
+      email: user.email,
     });
   } catch (error) {
     console.log(error.message);

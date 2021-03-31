@@ -1,0 +1,15 @@
+.Row > td,
+.Row > th {
+  padding: 0.5rem;
+}
+
+.Row:not(.Header):nth-of-type( 2n - 1 ){
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.Header {
+  text-align: left;
+  font-weight: 600;
+  box-shadow: 0 1px 0 0 #000;
+}
+

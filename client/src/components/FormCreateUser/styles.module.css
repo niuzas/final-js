@@ -1,0 +1,21 @@
+.FormCreate {
+  grid-column: 1/3;
+}
+
+.FormGroupContainer {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.FormGroupContainer>* {
+  flex-grow: 1;
+}
+
+.FormGroupContainer>*:last-child {
+  align-self: flex-end;
+}
+
+.FormGroupContainer>*:not(:last-child) {
+  margin-right: 1rem;
+}
