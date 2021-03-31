@@ -1,4 +1,4 @@
-# Weather app
+# Users app
 Application to manage users
 
 ## Required programs
