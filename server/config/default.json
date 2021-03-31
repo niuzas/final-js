@@ -1,0 +1,5 @@
+{
+  "mongoURI": "mongodb+srv://admin:cyborg911@cluster0.po5zx.mongodb.net/final-js?retryWrites=true&w=majority",
+  "PORT":5000
+
+}
