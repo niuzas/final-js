@@ -1,0 +1,7 @@
+.AnimalManagerGrid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-rows: auto;
+  gap: 2rem;
+
+}

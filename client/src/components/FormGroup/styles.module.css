@@ -1,0 +1,22 @@
+.FormGroup {}
+
+.FormGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.FormGroup input, .FormGroup select {
+  width: 100%;
+  padding: 0.25rem;
+}
+
+.FormGroup input, .FormGroup select {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.FormGroup input:focus, .FormGroup select:focus {
+  box-shadow: 0 1px 0 #000;
+}
