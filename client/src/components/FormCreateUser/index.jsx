@@ -3,6 +3,7 @@ import React from 'react';
 import Button from '../Button';
 import FormGroup from '../FormGroup';
 import styles from './styles.module.css';
+import LANG from '../../translations/LANG'
 
 class FormCreateUser extends React.Component {
 
@@ -12,31 +13,31 @@ class FormCreateUser extends React.Component {
   }
 
   render() {
-    const actionTitle = (this.props.isUpdating ? 'Update' : 'Create') + ' User';
+    const actionTitle = (this.props.isUpdating ? LANG.createuser : LANG.updateuser);
     return (
       <form className={styles.FormCreate} onSubmit={this.handleFormSubmit}>
         <h2>{actionTitle}</h2>
         <div className={styles.FormGroupContainer}>
           <FormGroup
-            name="name"
+            name={LANG.name}
             type="text"
             value={this.props.inputData.name ?? ''}
             handleChange={(value) => this.props.handleInputChange({ name: value })}
           />
           <FormGroup
-            name="age"
+            name={LANG.age}
             type="number"
             value={this.props.inputData.age ?? ''}
             handleChange={(value) => this.props.handleInputChange({ age: value })}
           />
           <FormGroup
-            name="email"
+            name={LANG.email}
             type="text"
             value={this.props.inputData.email ?? ''}
             handleChange={(value) => this.props.handleInputChange({ email: value })}
           />
           <FormGroup
-            name="password"
+            name={LANG.password}
             type="password"
             value={this.props.inputData.password ?? ''}
             handleChange={(value) => this.props.handleInputChange({ password: value })}
