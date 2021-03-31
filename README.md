@@ -6,6 +6,7 @@ node.js
 
 ## Set up project
 To run server you have to insert Mongo DB connection URL in ./server/config/config.json file by example in ./config/config.json.example
+Also you can change React client language - rename any available language file in ./client/src/translations/available to ./client/src/translations/LANG.js
 
 ## Available Scripts
 In the ./server directory, you need to run:
