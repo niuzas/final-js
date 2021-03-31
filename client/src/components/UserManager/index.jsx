@@ -112,7 +112,7 @@ export class UserManager extends Component {
           handleInputChange={this.updateEditedUser}
           inputData={editedUser}
         />
-        <Table title="Users" data={users} deleteEntity={this.deleteUser} updateEntity={this.editUser} />
+        <Table title="Esami Vartotojai" data={users} deleteEntity={this.deleteUser} updateEntity={this.editUser} />
       </div>
     );
   }

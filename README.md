@@ -5,7 +5,7 @@ Application to manage users
 node.js
 
 ## Set up project
-To run project you have to insert Mongo DB connection URL in ./config/config.json file by example in ./config/config.json.example
+To run server you have to insert Mongo DB connection URL in ./server/config/config.json file by example in ./config/config.json.example
 
 ## Available Scripts
 In the ./server directory, you need to run:

@@ -3,6 +3,7 @@ import React from "react";
 
 import TableRow from "./TableRow";
 import styles from './styles.module.css';
+import LANG from '../../translations/LANG'
 
 class Table extends React.Component {
 
@@ -16,11 +17,12 @@ class Table extends React.Component {
     }, [])
   }
 
-  createHeader = (colNames) => {      
+  createHeader = (colNames) => {
+    console.log("translation:",LANG)      
     const headers = colNames
       .filter(col => col !== 'id')
-      .map(col => col[0].toUpperCase() + col.slice(1));
-    headers.splice(headers.length, 0, 'Actions');
+      .map(col => LANG[col][0].toUpperCase() + LANG[col].slice(1));
+    headers.splice(headers.length, 0, LANG.actions[0].toUpperCase() + LANG.actions.slice(1));
     return <TableRow cols={headers} header={true} />
   }
 
